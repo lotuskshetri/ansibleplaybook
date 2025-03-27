@@ -1,7 +1,7 @@
 # ansibleplaybook
 
 a. Setup
-An EC2 instance was launched using a specified AMI.
+An EC2 instance was launched using ubuntu/images/hvm-ssd-gp3/ubuntu-noble-24.04-amd64-server-20250305.
 
 A security group was configured to allow SSH (port 22) and HTTP/HTTPS (ports 80 & 443).
 
@@ -36,4 +36,6 @@ Restarted Nginx to enforce SSL.
 
 SSH Authentication Setup
 
-The local machine’s public SSH key was added to the EC2 instance for secure, passwordless authentication.
+c. inventory ini was also configured
+
+d. the final command to run the playbook was : ansible-playbook -i inventory.ini playbook.yaml. After which pages for task1 and task2 were rendered.
